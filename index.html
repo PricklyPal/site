@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Botões Duplicados</title>
+    <title>Prickly Pal</title>
+    <!-- Favicon adicionado -->
+    <link rel="icon" type="image/png" href="https://img1.wsimg.com/isteam/ip/d716db09-ac86-4f24-af7d-492e147cb688/ChatGPT%20Image%2026%20de%20jul.%20de%202025%2C%2013_26_41.png/:/rs=w:984,h:984">
     <!-- Carrega Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -25,17 +27,18 @@
 </head>
 <body>
 
-    <!-- Botão Circular Flutuante (Direita - Ícone de Cliente) -->
-    <button 
+    <!-- Ícone de Atendimento ao Cliente (Direita) -->
+    <a 
+        href="#"
         id="floatingButton"
         class="
             fixed 
-            top-[40%] sm:top-[45%]  /* Posição vertical: mais baixo no mobile */
-            right-1/4 sm:right-[15%] /* Posição horizontal: mais perto do centro no mobile */
+            top-[65%] sm:top-[45%]  /* Posição vertical: ajustada para mobile e desktop */
+            right-1/4 sm:right-[15%] /* Posição horizontal: responsiva */
             
             /* Ajustes de Transformação e Tamanho */
             transform -translate-y-1/2 translate-x-1/2 
-            w-20 h-20 sm:w-28 sm:h-28 /* Tamanho menor no mobile */
+            w-20 h-20 sm:w-28 sm:h-28 /* Tamanho responsivo */
             
             /* Estilos Visuais */
             bg-white 
@@ -46,7 +49,7 @@
             hover:scale-110 focus:outline-none 
             p-0 
         "
-        aria-label="Botão de Ação Flutuante - Ícone de Cliente"
+        aria-label="Ícone de Atendimento ao Cliente"
     >
         <img 
             src="https://img1.wsimg.com/isteam/ip/907be967-2098-4041-809a-0b718d662147/ChatGPT%20Image%2019%20de%20jun.%20de%202025%2C%2021_44_47.png/:/cr=t:5.36%25,l:5.36%25,w:89.29%25,h:89.29%25/rs=w:600,h:600,cg:true,m" 
@@ -54,19 +57,21 @@
             class="rounded-full w-full h-full object-cover"
             onerror="this.onerror=null; this.src='https://placehold.co/100x100/F7EAC8/304020?text=Icone';"
         >
-    </button>
+    </a>
     
-    <!-- Botão de Texto (Direita - Abaixo do Ícone de Cliente) -->
-    <button 
+    <!-- Botão de Texto "Claim Mine!" (Direita) - AGORA COM LINK -->
+    <a 
+        href="https://jup.ag/tokens/DAXG5d2cMsWRFSrRFVrpGpVNqmrNP4FbTQXbusNHzFCy"
+        target="_blank"
         class="
             fixed 
-            top-[55%] sm:top-[60%] /* Posição abaixo do botão circular */
+            top-[80%] sm:top-[60%] /* Posição abaixo do botão circular */
             right-1/4 sm:right-[15%] /* Ancorado na lateral (responsivo) */
             
             /* Centralização e Tamanho */
             transform translate-x-1/2
-            text-base sm:text-lg /* Tamanho da fonte menor no mobile */
-            px-4 py-2 sm:px-6 sm:py-3 /* Padding menor no mobile */
+            text-base sm:text-lg /* Tamanho da fonte responsivo */
+            px-4 py-2 sm:px-6 sm:py-3 /* Padding responsivo */
             
             /* Estilos Visuais */
             bg-black text-white 
@@ -77,19 +82,20 @@
         aria-label="Botão Claim Mine"
     >
         🌵Claim Mine!🌵
-    </button>
+    </a>
 
-    <!-- Botão Circular Flutuante (Esquerda - Moeda) -->
-    <button 
+    <!-- Ícone de Moeda (Esquerda) -->
+    <a 
+        href="#"
         id="floatingButtonCoin"
         class="
             fixed 
-            top-[40%] sm:top-[45%] /* Mesma altura do botão da direita */
-            left-1/4 sm:left-[15%]  /* Posição horizontal (responsivo) */
+            top-[65%] sm:top-[45%] /* Mesma altura do botão da direita */
+            left-1/4 sm:left-[15%]  /* Posição horizontal (responsiva) */
             
             /* Ajustes de Transformação e Tamanho */
             transform -translate-y-1/2 -translate-x-1/2
-            w-20 h-20 sm:w-28 sm:h-28 /* Tamanho menor no mobile */
+            w-20 h-20 sm:w-28 sm:h-28 /* Tamanho responsivo */
             
             /* Estilos Visuais */
             bg-white 
@@ -100,7 +106,7 @@
             hover:scale-110 focus:outline-none 
             p-0 
         "
-        aria-label="Botão de Ação Flutuante - Ícone de Moeda"
+        aria-label="Ícone de Moeda"
     >
         <img 
             src="https://img1.wsimg.com/isteam/ip/907be967-2098-4041-809a-0b718d662147/coin.jpeg/:/cr=t:6.91%25,l:4.97%25,w:89.29%25,h:89.29%25/rs=w:600,h:600,cg:true,m" 
@@ -108,19 +114,21 @@
             class="rounded-full w-full h-full object-cover"
             onerror="this.onerror=null; this.src='https://placehold.co/100x100/F7EAC8/304020?text=Moeda';"
         >
-    </button>
+    </a>
     
-    <!-- Botão de Texto (Esquerda - Abaixo da Moeda) -->
-    <button 
+    <!-- Botão de Texto "Buy Now" (Esquerda) - AGORA COM LINK -->
+    <a 
+        href="https://launchmynft.io/sol/14726"
+        target="_blank"
         class="
             fixed 
-            top-[55%] sm:top-[60%] /* Posição abaixo do botão circular */
+            top-[80%] sm:top-[60%] /* Posição abaixo do botão circular */
             left-1/4 sm:left-[15%] /* Ancorado na lateral (responsivo) */
             
             /* Centralização e Tamanho */
             transform -translate-x-1/2
-            text-base sm:text-lg /* Tamanho da fonte menor no mobile */
-            px-4 py-2 sm:px-6 sm:py-3 /* Padding menor no mobile */
+            text-base sm:text-lg /* Tamanho da fonte responsivo */
+            px-4 py-2 sm:px-6 sm:py-3 /* Padding responsivo */
 
             /* Estilos Visuais */
             bg-black text-white 
@@ -131,7 +139,8 @@
         aria-label="Botão Buy Now"
     >
         🌵Buy Now🌵
-    </button>
+    </a>
 
 </body>
 </html>
+
